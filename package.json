@@ -1,10 +1,10 @@
 {
-  "name": "html-static-starter",
+  "name": "Airmob.link",
   "version": "0.1.0",
   "engines": {
     "node": ">=4.1.0"
   },
-  "description": "HTML static site starter kit",
+  "description": "Airmob website",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
@@ -13,14 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SimonTernoir/html-static-starter.git"
+    "url": "git+https://github.com/Airmob/Airmob.link"
   },
-  "author": "Simon Ternoir <simon.ternoir@unitag.io>",
-  "license": "MIT",
+  "author": "Simon <it@airmob.link>",
   "bugs": {
-    "url": "https://github.com/SimonTernoir/html-static-starter/issues"
+    "url": "https://github.com/Airmob/Airmob.link/issues"
   },
-  "homepage": "https://github.com/SimonTernoir/html-static-starter#readme",
+  "homepage": "http://airmob.link",
   "devDependencies": {
     "browser-sync": "^2.11.0",
     "del": "^2.2.0",

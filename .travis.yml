@@ -1,5 +1,8 @@
 language: node_js
 sudo: false
+branches:
+  only:
+    - master
 before_install:
 - gem install scss_lint
 script:
@@ -14,3 +17,6 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
+after_success:
+- chmod a+x ./tasks/deploy.sh
+- ./tasks/deploy.sh
