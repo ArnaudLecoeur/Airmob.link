@@ -1,0 +1,33 @@
+// Normalize libs
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import 'external/normalize';
+
+// Bourbon libs
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import 'bourbon';
+
+// Bulma
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import 'bulma/utilities/utilities';
+@import 'bulma/config/variables';
+// Bulma variables override
+@import 'var/variables';
+
+@import 'bulma/config/generated-variables';
+// Bulma generated-variables override
+@import 'var/generated-variables';
+
+@import 'bulma/base/base';
+@import 'bulma/elements/elements';
+@import 'bulma/components/components';
+@import 'bulma/layout/layout';
+
+// Architecture setups
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import 'architecture/architecture';
+.header {@import 'architecture/header';}
+.footer {@import 'architecture/footer';}
+
+// Pages
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+#home-wrapper {@import 'views/home';}

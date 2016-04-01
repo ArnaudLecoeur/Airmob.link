@@ -23,7 +23,10 @@
 		"dest": "js"
 	},
 	"scss": {
-		"includePaths": "",
+    "includePaths": [
+			"node_modules/bourbon/app/assets/stylesheets",
+			"node_modules/bulma"
+		],
 		"lint": "src/scss/**/*.scss",
 		"src": "src/scss/main.scss",
 		"name": "all.min.css",

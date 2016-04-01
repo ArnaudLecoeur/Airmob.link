@@ -2,8 +2,7 @@
 'use strict';
 
 module.exports = {
-  title: 'Hello World!',
-  baseUrl: 'http://example.com',
+  baseUrl: 'https://airmob.link',
   buildTime: new Date(),
   release: global._release,
 
