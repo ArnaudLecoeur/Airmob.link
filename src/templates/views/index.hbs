@@ -1,41 +1,56 @@
 {{#>layout }}
-<div id="home-wrapper">
+<div id="home-wrapper" class="header-spacer">
   {{! Jumbotron
   ———————————————————— }}
-  <section id="jumbotron" class="hero is-medium is-primary">
+  <section id="jumbotron" class="hero is-fullheight">
     <div class="hero-content">
+
       <div class="container">
         <h1 class="title is-1">
           Airmob vous connecte partout en France au meilleur des réseaux 4G
         </h1>
       </div>
+
+      <a href="/pricing" class="title is-3 offer">
+        Offre sans engagement, à partir de 89€
+      </a>
     </div>
   </section>
+
+
 
   {{! Features
   ———————————————————— }}
   <section id="features" class="hero">
     <div class="hero-content">
-      <div class="container is-text-centered">
-        <div class="columns">
+      <div class="container">
+        <div class="columns is-vcentered">
           <div class="column">
-            <h4 class="title is-4">
-              Activation immédiate dès réception du routeur 4G.<br/>
-              <strong>Sans engagement de durée</strong>
+            <h2 class="title is-2 is-text-left">
+              Activation immédiate.<br/>
+              <strong>Sans engagement de&nbsp;durée</strong>
             </h4>
           </div>
           <div class="column">
-            {{! Place image here. }}
-          </div>
-          <div class="column">
-            <h4 class="title is-4">
-              Démonstration clients, salons, séminaires, solution d'attente, etc.
-            </h4>
+            <img src="/images/home/router/airmob-router.jpg" alt="Airmob router" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  {{! Headline
+  ———————————————————— }}
+  <section id="headline" class="hero is-primary">
+    <div class="hero-content">
+      <div class="container">
+        <h2 class="title is-3">
+          Démonstrations clients, salons, séminaires, dépannages, etc.
+        </h2>
+      </div>
+    </div>
+  </section>
+
 
   {{! How it works
   ———————————————————— }}
@@ -44,42 +59,54 @@
       <div class="container is-text-centered">
         <div class="columns">
           <div class="column">
+            <h3 class="title is-3">
+              Connectez jusqu'à 6 équipements
+            </h3>
             <p>
-              1. Vous recevez un routeur 4G permettant de connecter jusqu’à 6 équipements, en wifi ou via un port Fast Ethernet
+              Vous recevez un routeur&nbsp;4G permettant de connecter jusqu’à 6 équipements en wifi ou via un port Fast Ethernet
             </p>
           </div>
           <div class="column">
+            <h3 class="title is-3">
+              Adaptez votre forfait à vos besoins
+            </h3>
             <p>
-              2. Vous choisissez un forfait data adapté à vos besoins : 30 Go ou 100 Go par mois.
+              Vous choisissez et adaptez votre forfait data à vos besoins&nbsp;: de 30&nbsp;Go à 100&nbsp;Go par&nbsp;mois
             </p>
           </div>
           <div class="column">
+            <h3 class="title is-3">
+              Le meilleur réseau 4G disponible&nbsp;!
+            </h3>
             <p>
-              3. Vous avez accès à plusieurs réseaux mobiles 4G et pouvez en changer jusqu’à une fois par mois
+              Vous activez votre routeur sur le meilleur réseau&nbsp;4G disponible et pouvez en changer à tout moment
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   {{! Order
   ———————————————————— }}
-  <section id="request-demo" class="hero is-primary">
+  <section id="order" class="hero">
     <div class="hero-content">
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column">
-            <h2 class="title is-3">Commander</h2>
+            <a href="/pricing" class="button is-primary is-large">Voir le détail des offres</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
+
   {{! Testimony
   ———————————————————— }}
-  <section id="how-it-works" class="hero">
+  <section id="testimony" class="hero">
     <div class="hero-content">
       <div class="container">
 
@@ -118,7 +145,7 @@
                 <p>
                   <strong>Jean-René Griton</strong>, Président — Aurignac Finance
                   <br>
-                  “Pendant notre déménagement, mon équipe est restée connectée au réseau de l’entreprise dans les meilleurs conditions”
+                  “Pendant notre déménagement, l’équipe d’Aurignac est restée connectée au réseau de l’entreprises dans de très bonnes conditions”
                 </p>
               </div>
             </div>
@@ -128,6 +155,22 @@
       </div>
     </div>
   </section>
+
+
+  {{! Request a demo
+  ———————————————————— }}
+  <section id="request-demo" class="hero is-primary">
+    <div class="hero-content">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <a href="#" class="button is-large">Demander une démo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
 </div>

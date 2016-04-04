@@ -9,3 +9,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
+
+.header-spacer {
+  padding-top: $header-height + 5px;
+}
