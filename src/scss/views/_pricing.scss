@@ -1,8 +1,7 @@
 @media screen and (min-width: $tablet) {
   $offset: -50px;
 
-  #jumbotron h1,
-  #jumbotron h3 {
+  #jumbotron h1 {
     position: relative;
     top: $offset;
   }
