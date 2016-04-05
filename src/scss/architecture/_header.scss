@@ -8,7 +8,7 @@
 
 
 .airmob-logo {
-  color: $primary;
+  color: $info;
   font-size: .5 * $header-height;
   font-weight: 300;
   padding-bottom: .1 * $header-height;
@@ -16,11 +16,19 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $primary;
+    color: $info;
   }
 
   img {
     margin: 0 5px;
     max-height: .7 * $header-height;
+  }
+}
+
+.header-right {
+  font-weight: normal;
+
+  .header-item {
+    color: $grey-darker;
   }
 }

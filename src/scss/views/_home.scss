@@ -1,3 +1,8 @@
+// Fix jumbotron height trouble (url bar);
+@media screen and (min-width: $tablet) {
+  min-height: auto;
+}
+
 #jumbotron {
   background-image: url('/images/home/background.jpg');
   background-position: center;

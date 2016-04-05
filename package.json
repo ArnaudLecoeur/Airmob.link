@@ -42,6 +42,7 @@
     "gulp-uglify": "^1.5.1",
     "gulp-uncss": "^1.0.4",
     "handlebars-intl": "^1.1.2",
+    "open-iconic": "^1.1.1",
     "require-dir": "^0.3.0",
     "yargs": "^3.31.0"
   }

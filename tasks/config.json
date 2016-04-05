@@ -1,8 +1,14 @@
 {
-	"assets": {
-		"src": "src/assets/**/*",
-		"dest": "."
-	},
+	"assets": [
+    {
+  		"src": "src/assets/**/*",
+  		"dest": "."
+    },
+    {
+  		"src": "node_modules/open-iconic/**/*",
+  		"dest": "svg/open-iconic"
+    }
+	],
 	"buildDir": "dist",
 	"handlebars": {
 		"context": "src/templates/context.js",
