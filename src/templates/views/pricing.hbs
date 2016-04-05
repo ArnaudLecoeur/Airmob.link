@@ -8,145 +8,24 @@
         <h1 class="title is-1">Les offres Airmob
           <p class="subtitle is-3">Activation immédiate, sans engagement de durée</p>
         </h1>
-
       </div>
     </div>
   </section>
 
-  <section id="offers" class="hero">
-    <div class="hero-content">
-      <div class="container">
+  {{! Offers section
+  ———————————————————— }}
 
-        <div class="columns is-centered offers-wrapper">
-          <div class="column is-third-desktop is-half-tablet">
-            <div class="offer-table-wrapper">
-              <div class="title-wrapper">
-                <span class="quota">30</span>
-                <span class="go">Go</span>
-              </div>
-              <div class="offer-content">
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Aucune durée d’engagement</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Pas de frais de mise en service</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Prêt du routeur</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Forfait adaptable chaque mois</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Selection du meilleur réseau 4G&nbsp;disponible chaque mois</span>
-                </p>
-                <div class="price-wrapper">
-                  <span class="price">89</span>
-                  <span class="currency">€</span>
-                  <span class="frequency">/mois</span>
-                </div>
-                <a href="/contact" class="button is-medium is-outlined is-danger">Commander</a>
-              </div>
-            </div> {{! /offer-table-wrapper }}
-          </div>
+  {{>pricing/_offers}}
 
-          <div class="column is-third-desktop is-half-tablet">
-            <div class="offer-table-wrapper">
-              <div class="title-wrapper">
-                <span class="quota">100</span>
-                <span class="go">Go</span>
-              </div>
-              <div class="offer-content">
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Aucune durée d’engagement</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Pas de frais de mise en service</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Prêt du routeur</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Forfait adaptable chaque mois</span>
-                </p>
-                <p class="feature-wrapper">
-                  <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg>
-                  <span class="feature">Selection du meilleur réseau 4G&nbsp;disponible chaque mois</span>
-                </p>
-                <div class="price-wrapper">
-                  <span class="price">129</span>
-                  <span class="currency">€</span>
-                  <span class="frequency">/mois</span>
-                </div>
-                <a href="/contact" class="button is-medium is-outlined is-danger">Commander</a>
-              </div>
-            </div>
-          </div> {{! /offer-table-wrapper }}
-        </div> {{! /columns.offers-wrapper}}
+  {{! Faq section
+  ———————————————————— }}
+  {{>pricing/_faq}}
 
-        <h5>
-          <a href="/docs/CGCP.pdf" target="_blank">Voir les conditions générales et conditions particulières du service</a>
-        </h5>
-
-      </div> {{! /container}}
-    </div>
-  </section> {{! /#offers}}
-
-
-
-
-
-
-  <section id="faq" class="hero is-mediume">
-    <div class="hero-content">
-      <div class="container">
-
-        <h2 class="title is-2">Foire Aux Questions</h2>
-
-        <div class="columns is-multiline content is-text-left">
-          <div class="column is-half">
-            <h3>Quand puis-je activer le service&nbsp;?</h3>
-            <p>Dès réception de votre commande, nous expédions un Airmob à l’adresse de livraison indiquée. Si vous avez exprimé une préférence pour un réseau 4G, Airmob est activé sur ce réseau sinon sur un réseau que nous avons sélectionné en fonction de notre base d’informations. Airmob est prêt à être utilisé. Nous sommes à votre disposition par téléphone ou par e-mail pour vous accompagner pour la mise en service du routeur.</p>
-          </div>
-          <div class="column is-half">
-            <h3>Puis-je changer de réseau&nbsp;?</h3>
-            <p>Lors de la mise en service et jusqu’à une fois par mois, vous pouvez changer de réseau. Nous sommes à votre disposition pour recueillir votre demande par téléphone ou par e-mail. Dans certaines situations, le changement de réseau peut s’accompagner d’un changement de carte SIM dont nous prenons en charge l’expédition à l’adresse de votre choix.</p>
-          </div>
-          <div class="column is-half">
-            <h3>Combien d’équipements puis je connecter et comment&nbsp;?</h3>
-            <p>Nous recommandons Airmob pour connecter jusqu’à 6 équipements (PC, smartphones, tablettes). Le routeur livré dispose d’une prise Fast Ethernet (RJ45) et offre la possibilité de connexion en WIFI. Le nom du réseau et la clé WEP sont indiqués dans le courrier accompagnant le colis de livraison.</p>
-          </div>
-          <div class="column is-half">
-            <h3>Que se passe-t-il lorsque j’ai atteint la quantité de data de mon forfait&nbsp;? Puis-je adapter mon forfait&nbsp;?</h3>
-            <p>Lorsque vous avez atteint 30Go ou 100Go d’utilisation, votre service n’est plus fonctionnel. A tout moment, vous pouvez choisir d’adapter votre forfait à votre consommation. Pour une augmentation de 30Go à 100Go, la prise en compte est effective dès le lendemain et le nouveau forfait est facturé sur le mois complet. Dans le cas d’une diminution, la prise d’effet est le 1er du mois suivant.</p>
-          </div>
-          <div class="column is-half">
-            <h3>Comment résilier le service&nbsp;?</h3>
-            <p>A tout moment, vous pouvez décider de résilier le service. Nous sommes à votre disposition par téléphone ou par e-mail pour prendre en compte votre demande et vous transmettre la référence de restitution. Dès réception de l’équipement complet, nous arrêtons la facturation de services.</p>
-          </div>
-          <div class="column is-half">
-            <h3>Comment est calculée la facturation&nbsp;?</h3>
-            <p>Le forfait Airmob est facturé sur une base mensuelle, par mois calendaire plein.</p>
-          </div>
-        </div>
-
-      </div> {{! /container}}
-    </div>
-  </section> {{! /#faq}}
 
   {{! Router section
   ———————————————————— }}
   <section id="router">
-    <div class="container">
+    <div class="container">      
       <div class="columns is-centered">
         <div class="column is-half">
           <img src="/images/home/router/airmob-router.jpg" alt="Airmob router" />
@@ -168,6 +47,10 @@
       </div>
     </div>
   </section>
+
+  {{! Request a demo
+  ———————————————————— }}
+  {{>pricing/_order-form}}
 
 </div>
 {{/layout}}

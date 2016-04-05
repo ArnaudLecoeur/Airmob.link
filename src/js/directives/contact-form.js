@@ -5,7 +5,7 @@ angular.module('airmob')
 .directive('contactForm', ['$http', function directive($http) {
   return {
     restrict: 'A',
-    link: function link($scope) {
+    link: function link($scope, element, attrs) { // eslint-disable-line no-unused-vars
       // AJAX form call
       $scope.formSubmit = function formSubmit() {
         $scope.success = null;
@@ -20,7 +20,7 @@ angular.module('airmob')
         };
 
 
-        $http.post('https://opn.to/r/airmob_contact_form/', data)
+        $http.post('https://opn.to/r/' + attrs.url + '/', data)
         .success(function success() {
           $scope.success = true;
         }).error(function error() {

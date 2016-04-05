@@ -27,9 +27,7 @@
   }
 }
 
-
-
-#offers .offer-table-wrapper {
+.offer-table-wrapper {
   background-color: #fff;
 
   .title-wrapper {
@@ -101,7 +99,6 @@
   }
 }
 
-
 #faq {
   background-color: $grey-lighter;
 
@@ -122,4 +119,12 @@
   background: transparent;
   border-color: #fff;
   color: #fff;
+}
+
+#order-form .offers-wrapper {
+  margin-top: 30px;
+
+  .offer-table-wrapper .button {
+    display: none;
+  }
 }
