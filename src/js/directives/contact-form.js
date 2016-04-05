@@ -20,7 +20,6 @@ angular.module('airmob')
           field5: $scope.order ? $scope.order.plan : ''
         };
 
-
         $http.post('https://opn.to/r/' + attrs.url + '/', data)
         .success(function success() {
           $scope.success = true;
