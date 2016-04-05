@@ -1,0 +1,68 @@
+{{#>layout }}
+<div id="contact-wrapper" class="header-spacer">
+  {{! Jumbotron
+  ———————————————————— }}
+  <section id="jumbotron" class="hero is-info is-left">
+    <div class="hero-content">
+      <div class="container content">
+        <h1 class="title is-1" style="margin: 0;">
+          Contact
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-left">
+    <div class="hero-content">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <form email-request-demo class="container" name="emailForm" ng-submit="formSubmit()">
+              <div class="columns">
+                <div class="column">
+                  <p class="control">
+                    <label class="label">Nom *</label>
+                    <input class="input" ng-model="firstName" id="firstNameInput" type="text" required>
+                  </p>
+                </div>
+                <div class="column">
+                  <p class="control">
+                    <label class="label">Prénom *</label>
+                    <input class="input" ng-model="lastName" id="lastNameInput" type="text" required>
+                  </p>
+                </div>
+              </div>
+              <p class="control">
+                <label class="label">Adresse email *</label>
+                <input class="input" ng-model="email" id="emailInput" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" type="email" required>
+              </p>
+              <p class="control">
+                <label class="label">Société *</label>
+                <input class="input" ng-model="company" id="companyInput" type="text" required>
+              </p>
+              <p class="control">
+                <label class="label">Numéro de téléphone</label>
+                <input class="input" ng-model="phoneNumber" id="phoneNumberInput" type="text">
+              </p>
+              <p class="control" style="text-align: right;">
+                <button class="button is-danger is-outlined is-medium" type="submit">
+                  Envoyer
+                </button>
+              </p>
+
+              <p class="control visibility-hidden" ng-class="{'visibility-hidden': !error}">
+                une erreur s'est produite veuillez réessayer ultérieurement.
+              </p>
+              <p class="control visibility-hidden" ng-class="{'visibility-hidden': !success}">
+                Votre message a bien été envoyé. Merci de nous avoir contacté&nbsp;!
+              </p>
+
+            </form>
+          </div>
+        </div> {{! /columns}}
+
+      </div> {{! /container}}
+    </div>
+  </section> {{! /#offers}}
+
+</div>
+{{/layout}}
