@@ -1,12 +1,6 @@
-// Fix jumbotron height trouble (url bar);
-
 #jumbotron {
-  background-image: url('/images/home/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   @media screen and (max-width: $tablet) {
+    // Fix jumbotron height trouble (url bar);
     min-height: auto;
 
     h1 {
@@ -41,6 +35,27 @@
     display: flex;
     padding: 10px;
   }
+
+  #img-background,
+  #overlay-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #img-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    z-index: 0;
+
+    &.js-fade-in {
+      @include animation(fade-in 1s ease-in forwards);
+    }
+  }
 }
 
 
@@ -63,4 +78,10 @@
   background: transparent;
   border-color: #fff;
   color: #fff;
+}
+
+// FadeIn for background image
+@include keyframes(fade-in) {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
