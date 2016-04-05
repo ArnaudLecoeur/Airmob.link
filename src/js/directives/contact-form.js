@@ -16,7 +16,8 @@ angular.module('airmob')
           field1: $scope.lastName,
           field2: $scope.email,
           field3: $scope.company,
-          field4: $scope.phoneNumber
+          field4: $scope.phoneNumber,
+          field5: $scope.order ? $scope.order.plan : ''
         };
 
 
