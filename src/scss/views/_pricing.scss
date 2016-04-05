@@ -67,10 +67,11 @@
   }
 
   .feature-wrapper svg {
+    $size: 10px;
     fill: $success;
-    height: 10px;
-    margin-right: 6px;
-    width: 12px;
+    height: $size;
+    margin-right: $size / 2;
+    width: $size;
   }
 
   .price-wrapper {
