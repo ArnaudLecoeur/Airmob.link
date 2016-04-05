@@ -2,6 +2,7 @@
 
 var gulp		= require('gulp');
 var config	= require('./config.json');
+var gulpSequence = require('gulp-sequence');
 
 
 var deps = [];
@@ -11,8 +12,9 @@ for (var a in config.assets) {
 }
 
 // Meta tesk asset
-gulp.task('assets', deps);
-
+gulp.task('assets', function build(cb) {
+  gulpSequence.apply(null, deps.concat(cb));
+});
 
 // Copy assets folders in build path
 function assetTask(taskName, asset) {

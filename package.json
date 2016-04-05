@@ -25,6 +25,7 @@
     "browser-sync": "^2.11.0",
     "bulma": "0.0.17",
     "del": "^2.2.0",
+    "fs": "0.0.2",
     "gulp": "^3.9.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat": "^2.6.0",

@@ -66,11 +66,11 @@
     text-align: left;
   }
 
-  .feature-wrapper img {
-    $size: 8px;
-    height: $size;
-    margin-right: $size;
-    width: $size;
+  .feature-wrapper svg {
+    fill: $success;
+    height: 10px;
+    margin-right: 6px;
+    width: 12px;
   }
 
   .price-wrapper {
