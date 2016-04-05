@@ -1,13 +1,18 @@
 // Fix jumbotron height trouble (url bar);
-@media screen and (min-width: $tablet) {
-  min-height: auto;
-}
 
 #jumbotron {
   background-image: url('/images/home/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: $tablet) {
+    min-height: auto;
+
+    h1 {
+      margin-top: 1rem 0;
+    }
+  }
 
   .hero-content {
     background-color: rgba(10, 92, 192, .7);

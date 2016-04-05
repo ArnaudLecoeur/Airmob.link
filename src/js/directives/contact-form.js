@@ -20,7 +20,7 @@ angular.module('airmob')
         };
 
 
-        $http.post('https://opn.to/r/airmob_contact_form', data)
+        $http.post('https://opn.to/r/airmob_contact_form/', data)
         .success(function success() {
           $scope.success = true;
         }).error(function error() {
