@@ -1,10 +1,12 @@
 #jumbotron {
+  position: relative;
+
   @media screen and (max-width: $tablet) {
     // Fix jumbotron height trouble (url bar);
     min-height: auto;
 
     h1 {
-      margin-top: 1rem 0;
+      margin: 1rem 0;
     }
   }
 
@@ -78,6 +80,8 @@
   background: transparent;
   border-color: #fff;
   color: #fff;
+  height: auto;
+  white-space: normal;
 }
 
 // FadeIn for background image
