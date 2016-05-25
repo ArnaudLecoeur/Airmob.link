@@ -2,3 +2,21 @@
   background-color: #fff;
   padding: 40px 20px;
 }
+
+#contacts-wrapper {
+  .contact-icons {
+    width: 30%;
+  }
+
+  h5 {
+    border-bottom: 1px solid $grey-dark;
+    color: $grey-dark;
+    margin: 10px 0;
+    padding-bottom: 5px;
+  }
+
+  a {
+    border-width: 0;
+    color: $grey-dark;
+  }
+}

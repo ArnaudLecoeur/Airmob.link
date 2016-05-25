@@ -19,8 +19,9 @@
   }
 
   img {
+    height: $header-height;
     margin: 0 5px;
-    max-height: .7 * $header-height;
+    max-height: $header-height;
   }
 }
 
